@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name = "viewport" content="width = device-width, initial-scale=1">
+
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+.header {
+    background-color:#70799c;
+    color:black;
+    text-align:left;
+    font-family: "Brush Script MT", cursive; font-size:40px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+    padding:10px;
+    height:100px;
+    
+
+
+}
+
+.column {
+  float: left;
+  padding: 1px;
+  
+}
+
+
+.left, .right {
+
+  width: 25%;
+
+}
+
+
+.middle {
+  width: 50%;
+
+}
+
+#footer {
+    background-color:#484c59;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:30px;	
+   height:200px; 	 
+}
+
+</style>
+<style>
+body {
+  background-color: #f5f5f5;
+  
+
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+    
+ 
+  }
+}
+</style>
+<style>
+
+table#t0  tr{
+    background-color: #e0e0e0;
+    padding:10px;
+}
+table#t0 td:hover{
+      background-color: #f5f5f5;
+      }
+</style>
+<style>
+ul#menu li {
+  display:inline;
+  
+  color:#0b3452;
+  font-size:20px;
+ 
+
+}
+</style>
+<style>A {text-decoration: none;} 
+</style>
+</head>
+
+<body>
+
+  
+<div id="header">
+<a href="C:\Users\Administrator\Desktop\Project0-master\indexh.html">
+<img src = "TUB.png" alt = "Student raise hand" style = "width:100px; height:100px;" align="left">
+</a>
+<h2 class = "header";>MeleSciencePage</h2>
+
+
+</div>
+
+
+
+
+<div class="row" >
+   <div class="column left" style="background-color:#f5f5f5;">
+<div style="color:black;background-color:white; border-style: solid; border-width: 1px;border-color:#d3d3d3;">
+     
+
+<br><table id="t0" style="width:100%">
+  <tr>
+    <td><a href="C:\Users\Administrator\Desktop\Project0-master\indexh.html "style="text-decoration:none">Home</a></td></tr>
+<tr>
+      <td><a href="C:\Users\Administrator\Desktop\Project0-master\indexchem.html "style="text-decoration:none">Chemistry</a></td></tr>
+<tr> 
+      <td><a href="C:\Users\Administrator\Desktop\Project0-master\indexphy.html "style="text-decoration:none">Physics</a></td></tr>
+<tr>
+      <td><a href="C:\Users\Administrator\Desktop\Project0-master\indexbio.html "style="text-decoration:none">Biology</a></td></tr> 
+<tr>
+      <td><a href="C:\Users\Administrator\Desktop\Project0-master\indexmat.html "style="text-decoration:none">Maths</a></td></tr>
+<tr>
+      <td><a href="C:\Users\Administrator\Desktop\Project0-master\indexcom.html "style="text-decoration:none">Computing</a></td></tr>
+
+</table>
+
+
+          
+</div>
+
+
+
+</div>
+                 <div class="column middle" style="background-color:#f5f5f5;">
+      
+   <div style="color:black;text-align:center;background-color:white; border-style: solid; border-width: 1px;border-color:#d3d3d3;">
+<h1> Programing projects</h1>
+<br>
+<br>
+<h2>Buttons and clicks: A button to add apples
+</h2><br>
+<ul id="list1"></ul>
+  <button id="button1">add an apple</button>
+  <br>
+  <ul id="list2"></ul>
+  <button id="button2">remove an apple</button>
+
+<br><br>
+<h2>Buttons and clicks consolidation
+</h2><br>
+<p>
+  The <button id="noun1">dog</button> <button id="verb">saw</button> the
+  <button id="adjective">white</button>
+  <button id="noun2">cat</button>
+</p>
+<p><button id="daymode" style="color:black; background-color:white;">day mode</button>
+<button id="nightmode"style="color:white; background-color:black;"
+>night mode</button></p>
+
+<img id="image" src="data:image/jpeg;base64,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">
+
+<ul id="list3"></ul><br><br>
+<h2>Variables: keeping track of the number of clicks
+</h2><br>
+<ul id="list4"></ul>   
+
+ <button id="button3">click-count</button><br><br>
+ <h2>Variables consolidation: counting sheep
+</h2><br>
+<p>There have been <span id="sheep_count">0</span> sheep 🐑 and <span id="other_count">0</span> others.</p>
+<input id="text" />
+<button id="button4">add animal</button><br><br>
+<h2>Arrays and buttons
+</h2><br>
+<ul id="list5"></ul>
+<button id="button5">reveal next fruit</button><br><br>
+<h2>Arrays: Adding, removing, and summing elements
+</h2><br>
+<p>Total of the last 5 numbers: <span id="total"></span> </p>
+<input id="number" />
+<button id="add_number">add value</button><br><br>
+<h2>Project: Don't go higher than 11!
+</h2><br><p>So far you have rolled:</p>
+<ul id="list6"></ul>
+<button id="button_roll">Roll the dice</button>
+<p>Total: <span id="total2">0</span>. <span id="info">Keep playing!</span></p>
+<button id="button_remove">Remove the last roll</button>
+<button id="button_restart">Start again</button><br><br>
+<h2>Project: Show earnings and expenses
+</h2>      <ul id="list7"></ul>
+<p>Earnings: <span id="earning">0</span><span id="enlist"></span></p>
+<p>Expenses: <span id="expense">0</span><span id="exlist"></span></p>
+<p>Balance: <span id="balance">0</span><span id="balist"></span></p>
+<input id="number2" placeholder="Earnings and Expences" />
+<button id="add_ee"style="background-color:yellow;color:green">Input</button><br><br>
+<h2>Project: List of links
+</h2> <ul id="list8"></ul>   <br><br>
+<h2>Project: Build an image carousel
+</h2>       <p>Image carousel:</p>
+
+<ul id="list9"></ul>
+<button id="btn"style="background-color:yellow ;color:green">Previous</button>  
+<button id="add_name"style="background-color:yellow;color:green">next</button>
+   
+  
+
+
+
+
+
+
+
+    
+</div> </div>
+
+   <div class = "column right" style = "background-color:#f5f5f5;">
+    
+  
+     <div style="color:black;background-color:white; border-style: solid; border-width: 1px;border-color:#d3d3d3;">
+     <h2 align = "center">Video posts</h2>
+     <iframe width="330" height="200" src="https://www.youtube.com/embed/POe1cufDWFs"  align="center" frameborder="0" allowfullscreen></iframe>
+<hr  style= "border-top: 1px dotted black;">
+
+<iframe width="330" height="200" src="https://www.youtube.com/embed/MJUJ4wbFm_A"  align="center" frameborder="0" allowfullscreen></iframe>
+     
+
+
+
+
+  
+  </div> 
+
+    </div>
+</div>
+<div id="footer">
+Copyright MeleSciencePage.com
+</div>
+</body>
+<script>var sheep_count, other_count;
+
+  function getNumberOrString(value) {
+    // Convert a string value to a number if possible
+    let number_value = Number(value);
+    if (Number.isNaN(number_value)) {
+      return value
+    } else {
+      return number_value
+    }
+  }
+  
+  
+  sheep_count = 0;
+  other_count = 0;
+  
+  
+  document.getElementById('button4').addEventListener('click', (event) => {
+    if (getNumberOrString(document.getElementById('text').value) == 'sheep') {
+      sheep_count = (typeof sheep_count === 'number' ? sheep_count : 0) + 1;
+      let element_sheep_count = document.getElementById('sheep_count');
+      element_sheep_count.innerText = sheep_count;
+    }
+  
+  });
+  
+  document.getElementById('button4').addEventListener('click', (event) => {
+    if (getNumberOrString(document.getElementById('text').value) != 'sheep') {
+      other_count = (typeof other_count === 'number' ? other_count : 0) + 1;
+      let element_other_count = document.getElementById('other_count');
+      element_other_count.innerText = other_count;
+    }
+  
+  });</script>
+  <script>document.getElementById('button1').addEventListener('click', (event) => {
+    let element_list = document.getElementById('list1');
+    let new_li = document.createElement('li');
+    new_li.innerText = 'apple';
+  
+    element_list.appendChild(new_li);
+  
+  });
+  
+  document.getElementById('button2').addEventListener('click', (event) => {
+    let element_list2 = document.getElementById('list1');
+    element_list2.replaceChildren();
+  
+  });</script>
+  <script>function getWords(type) {
+    // Return words of a given type, or all words if type is 'WORD'
+    let words = [
+      {type: 'ADJECTIVE', value: 'big'},
+      {type: 'ADJECTIVE', value: 'purple'},
+      {type: 'ADJECTIVE', value: 'new'},
+      {type: 'ADJECTIVE', value: 'interesting'},
+      {type: 'ADJECTIVE', value: 'curious'},
+      {type: 'ADJECTIVE', value: 'happy'},
+      {type: 'ADJECTIVE', value: 'busy'},
+      {type: 'ADJECTIVE', value: 'tiny'},
+      {type: 'NOUN', value: 'umbrella'},
+      {type: 'NOUN', value: 'knee'},
+      {type: 'NOUN', value: 'banana'},
+      {type: 'NOUN', value: 'platypus'},
+      {type: 'NOUN', value: 'cat'},
+      {type: 'NOUN', value: 'mouse'},
+      {type: 'NOUN', value: 'house'},
+      {type: 'VERB', value: 'impressed'},
+      {type: 'VERB', value: 'honoured'},
+      {type: 'VERB', value: 'saw'},
+      {type: 'VERB', value: 'ate'},
+      {type: 'VERB', value: 'surprised'},
+      {type: 'VERB', value: 'annoyed'},
+      {type: 'VERB', value: 'touched'},
+      {type: 'VERB', value: 'understood'},
+      {type: 'VERB', value: 'taught'},
+    ];
+    return words.filter(word => type === 'WORD' || word.type === type).map(word => word.value);
+  }
+  
+  function randomInt(n) {
+    // Return a random number from in [0, n[
+    return Math.floor(Math.random()*n);
+  }
+  
+  function randomMember(arr) {
+    // Return a random member of the array
+    return arr[randomInt(arr.length)]
+  }
+  
+  
+  
+  document.getElementById('noun1').addEventListener('click', (event) => {
+    let element_noun1 = document.getElementById('noun1');
+    element_noun1.innerText = randomMember(getWords('WORD'));
+  
+  });
+  
+  document.getElementById('verb').addEventListener('click', (event) => {
+    let element_verb = document.getElementById('verb');
+    element_verb.innerText = randomMember(getWords('WORD'));
+  
+  });
+  
+  document.getElementById('adjective').addEventListener('click', (event) => {
+    let element_adjective = document.getElementById('adjective');
+    element_adjective.innerText = randomMember(getWords('WORD'));
+  
+  });
+  
+  document.getElementById('noun2').addEventListener('click', (event) => {
+    let element_noun2 = document.getElementById('noun2');
+    element_noun2.innerText = randomMember(getWords('WORD'));
+  
+  });
+  
+  document.getElementById('daymode').addEventListener('click', (event) => {
+    let element_list = document.getElementById('list3');
+    let new_li = document.createElement('li');
+    new_li.innerText = 'Day Mode';
+  
+    element_list.appendChild(new_li);
+  
+  });
+  
+  document.getElementById('nightmode').addEventListener('click', (event) => {
+    let element_list2 = document.getElementById('list3');
+    let new_li2 = document.createElement('li');
+    new_li2.innerText = 'Night Mode';
+  
+    element_list2.appendChild(new_li2);
+  
+  });
+  
+  document.getElementById('daymode').addEventListener('click', (event) => {
+    event.target.style.color = '#ff0000';
+  
+  });
+  
+  document.getElementById('nightmode').addEventListener('click', (event) => {
+    event.target.style.color = '#3333ff';
+  
+  });
+  
+  document.getElementById('image').addEventListener('click', (event) => {
+    event.target.setAttribute("src", 'https://images.pexels.com/videos/8474638/adult-adventure-arid-art-8474638.jpeg?auto=compress&cs=tinysrgb&h=204&fit=crop&w=228&dpr=1');
+  
+  });</script><script>var click_count;
+
+
+click_count = 0;
+
+
+document.getElementById('button3').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list4');
+  element_list.innerText = click_count;
+  click_count = (typeof click_count === 'number' ? click_count : 0) + 1;
+
+});</script><script>var fruits;
+
+
+fruits = ['mango', 'orange', 'banana'];
+
+
+document.getElementById('button5').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list5');
+  if (!!fruits.length) {
+    let new_li = document.createElement('li');
+    new_li.innerText = fruits.shift();
+
+    element_list.appendChild(new_li);
+  }
+
+});</script><script>var numbers;
+
+function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
+
+
+numbers = [0, 0, 0, 0, 0];
+
+
+document.getElementById('add_number').addEventListener('click', (event) => {
+  numbers.push(getNumberOrString(document.getElementById('number').value));
+  numbers.shift();
+  let element_total = document.getElementById('total');
+  element_total.innerText = numbers.reduce((a,b) => a+b, 0);
+
+});
+numbers.push(getNumberOrString(document.getElementById('number').value));
+</script></html><script>var rolls, dice, totals, number;
+
+  function randomInt(n) {
+    // Return a random number from in [0, n[
+    return Math.floor(Math.random()*n);
+  }
+  
+  function randomMember(arr) {
+    // Return a random member of the array
+    return arr[randomInt(arr.length)]
+  }
+  
+  
+  
+  document.getElementById('button_roll').addEventListener('click', (event) => {
+    rolls = [1, 2, 3, 4, 5, 6];
+    dice = [randomMember(rolls), randomMember(rolls)];
+    totals = dice.reduce((a,b) => a+b, 0);
+    dice.forEach((number) => {
+      let element_list = document.getElementById('list6');
+      let new_li = document.createElement('li');
+      new_li.innerText = number;
+  
+      element_list.appendChild(new_li);
+      let element_total = document.getElementById('total2');
+      element_total.innerText = dice.reduce((a,b) => a+b, 0);
+      let element_info = document.getElementById('info');
+      if (totals == 11) {
+        element_info.innerText = 'You won!';
+      }
+      if (totals > 11) {
+        element_info.innerText = 'You lost!';
+      }
+      if (totals < 11) {
+        element_info.innerText = 'Keep playing!';
+      }
+    });
+  
+  });
+  
+  document.getElementById('button_remove').addEventListener('click', (event) => {
+    let element_list2 = document.getElementById('list6');
+    element_list2.replaceChildren();
+  
+  });
+  
+  document.getElementById('button_restart').addEventListener('click', (event) => {
+    let element_list3 = document.getElementById('list6');
+    element_list3.replaceChildren();
+    let element_total2 = document.getElementById('total2');
+    element_total2.innerText = 0;
+    let element_info2 = document.getElementById('info');
+    element_info2.innerText = 'Keep playing';
+  
+  });</script><script>var input_value, array, array2, arraysum, sum, sum2;
+
+function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
+
+
+array = [null, null, null];
+array2 = [null, null, null];
+arraysum = [null, null, null];
+
+
+document.getElementById('add_ee').addEventListener('click', (event) => {
+  input_value = getNumberOrString(document.getElementById('number2').value);
+  arraysum.push(input_value);
+  if (input_value >= 0) {
+    let element_earning = document.getElementById('earning');
+    array.push(input_value);
+    sum = array.reduce((a,b) => a+b, 0);
+    element_earning.innerText = sum;
+    let element_list = document.getElementById('list7');
+    let element_enlist = document.getElementById('enlist');
+    let new_li = document.createElement('li');
+    new_li.innerText = input_value;
+
+    element_enlist.appendChild(new_li);
+  } else {
+    let element_expense = document.getElementById('expense');
+    array2.push(input_value);
+    sum2 = array2.reduce((a,b) => a+b, 0);
+    element_expense.innerText = sum2;
+    let element_exlist = document.getElementById('exlist');
+    let new_li2 = document.createElement('li');
+    new_li2.innerText = input_value;
+
+    element_exlist.appendChild(new_li2);
+  }
+  let element_balance = document.getElementById('balance');
+  element_balance.innerText = arraysum.reduce((a,b) => a+b, 0);
+
+});
+!array.length;
+</script><script>var array, item;
+
+
+  array = ['www.facebook.com', 'www.gmail.com', 'www.gov.com'];
+  let element_list = document.getElementById('list8');
+  array.forEach((item) => {
+    let new_li = document.createElement('li');
+    let new_a = document.createElement('a');
+    new_a.setAttribute("href", item);
+    new_a.innerText = item;
+  
+    new_li.appendChild(new_a);
+  
+    element_list.appendChild(new_li);
+  });
+  </script><script>var array;
+
+
+array = ['https://images.pexels.com/videos/8474638/adult-adventure-arid-art-8474638.jpeg?auto=compress&cs=tinysrgb&h=204&fit=crop&w=228&dpr=1', 'https://media.istockphoto.com/photos/background-of-galaxy-and-stars-picture-id1035676256?b=1&k=20&m=1035676256&s=612x612&w=0&h=5vGVNVdkpw46y08cWz9oQcVBHWsvNDkfFUYjDruKHu0=', 'data:image/png;base64,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'];
+
+
+document.getElementById('add_name').addEventListener('click', (event) => {
+  array.push(array[0]);
+  array.shift();
+  let element_list = document.getElementById('list9');
+  let new_ol = document.createElement('ol');
+  let new_img = document.createElement('img');
+  new_img.setAttribute("src", array[0]);
+
+  new_ol.appendChild(new_img);
+
+  element_list.appendChild(new_ol);
+
+});
+
+document.getElementById('btn').addEventListener('click', (event) => {
+  array.unshift(array.slice(-1)[0]);
+  array.pop();
+  let element_list2 = document.getElementById('list9');
+  let new_ol2 = document.createElement('ol');
+  let new_img2 = document.createElement('img');
+  new_img2.setAttribute("src", array[0]);
+
+  new_ol2.appendChild(new_img2);
+
+  element_list2.appendChild(new_ol2);
+
+});</script>
+</html>
